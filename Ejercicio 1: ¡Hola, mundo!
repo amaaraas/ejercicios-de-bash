@@ -1,0 +1,10 @@
+#con el siguiente comando creamos un archivo .sh, al dar enter se abrira un espacio para escribir el contenido del documento
+amara@penguin:~$ cat > hello.sh
+echo "hola mundo"                 #usamos echo para imprimir el mensaje entre comillas, y ctrl + D para volver al terminal
+
+#para poder ejecutar el archivo debemos darle permiso de ejecución 
+amara@penguin:~$ chmod +x hello.sh
+
+#lo ejecutamos de la siguiente forma y se imprimira el contenido del archivo 
+amara@penguin:~$ ./hello.sh
+hola mundo
