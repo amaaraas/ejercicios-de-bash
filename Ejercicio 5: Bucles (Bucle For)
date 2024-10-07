@@ -1,0 +1,19 @@
+#en el archivo BucleFor.sh escibimos estas lineas de codigo
+#!/bin/bash
+for i in 1 2 3 4 5 6 7 8 9 10; do
+        echo $i
+done
+
+#al ejecutarlo nos arroja lo siguiente
+amara@penguin:~$ ./BucleFor.sh
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+amara@penguin:~$ 
