@@ -1,0 +1,31 @@
+#en el archivo ./comparativa.sh escribimos
+
+#!/bin/bash
+echo ingrese un valor mayor a 10
+read valor
+if [ "$valor" -gt "10" ] ;then
+echo el numero es grande
+else
+echo el numero es pequeño
+fi
+
+#el resultado con un numero igual a 10 es el siguiente
+amara@penguin:~$ ./comparativa.sh
+ingrese un valor mayor a 10
+10
+el numero es pequeño
+amara@penguin:~$ 
+
+#con un numero mayor a 10
+amara@penguin:~$ ./comparativa.sh
+ingrese un valor mayor a 10
+12
+el numero es grande
+amara@penguin:~$ 
+
+#con un numero menor a 10
+amara@penguin:~$ ./comparativa.sh
+ingrese un valor mayor a 10
+5
+el numero es pequeño
+amara@penguin:~$ 
