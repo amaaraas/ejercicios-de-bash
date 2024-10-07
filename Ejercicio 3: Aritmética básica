@@ -1,0 +1,46 @@
+#en el archivo escribimos lo siguiente
+#!/bin/bash
+echo en la siguiente linea ingrese dos valores que quiera sumar
+read valor1 valor2
+echo el resultado es: $(($valor1+valor2))
+
+#lo que al ejecutar el archivo deberia quedar de la siguiente forma
+amara@penguin:~$ ./suma.sh
+en la siguiente linea ingrese dos valores que quiera sumar
+12 44
+el resultado es: 56
+amara@penguin:~$ 
+
+#hacemos lo mismo con el resto de operaciones
+#resta
+echo en la siguiente linea ingrese dos valores que quiera restar
+read valor1 valor2
+echo el resultado es: $(($valor1-valor2))
+
+amara@penguin:~$ ./resta.sh
+en la siguiente linea ingrese dos valores que quiera restar
+12 44
+el resultado es: -32
+amara@penguin:~$ 
+
+#multiplicacion
+echo en la siguiente linea ingrese dos valores que quiera multiplicar
+read valor1 valor2
+echo el resultado es: $(($valor1*valor2))
+
+amara@penguin:~$ ./multiplicacion.sh
+en la siguiente linea ingrese dos valores que quiera multiplicar
+12 44
+el resultado es: 528
+amara@penguin:~$ 
+
+#division
+echo en la siguiente linea ingrese dos valores que quiera dividir
+read valor1 valor2
+echo el resultado es: $(($valor1/valor2))
+
+amara@penguin:~$ ./division.sh
+en la siguiente linea ingrese dos valores que quiera dividir
+12 44
+el resultado es: 0
+amara@penguin:~$ 
