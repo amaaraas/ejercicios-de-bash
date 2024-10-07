@@ -1,0 +1,20 @@
+#en el archivo ejercicio7.sh escribimos lo siguiente
+
+#!/bin/bash
+if [ -e /home/amara/testfile.txt ]; then
+echo el archivo existe
+else 
+echo archivo creado
+fi
+
+#al ejecutar ocurre que el codigo recorre la ubicacion que le especificamos en busca del archivo testfile.txt, si lo encuentra imprime "el archivo existe" y si no imprime "archivo creado" 
+
+#en este caso el archivo no existe en mi carpeta por lo que me arrojo "archivo creado"
+amara@penguin:~$ ./ejercicio7.sh
+archivo creado
+amara@penguin:~$ 
+
+#ahora, cree el archivo con el comando touch testfile.txt y el script reconocio la existencia del archivo
+amara@penguin:~$ ./ejercicio7.sh
+el archivo existe
+amara@penguin:~$ 
