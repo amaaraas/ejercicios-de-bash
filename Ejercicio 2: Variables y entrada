@@ -1,23 +1,11 @@
-#escribir completo el siguiente codigo
+#en el archivo nombre.sh escribimos lo siguiente
 #!/bin/bash
 echo Introduce tu nombre
 read nombre
 echo Tu nombre es $nombre
 
 #el resultado deberia ser el siguiente
-amara@penguin:~$ #!/bin/bash
-echo Introduce tu nombre
-read nombre
-echo Tu nombre es $nombre
+amara@penguin:~$ ./nombre.sh
 Introduce tu nombre
 amara
 Tu nombre es amara   
-
-#tambien esta la opcion de ejecutar cada comando uno por uno
-amara@penguin:~$ #!/bin/bash
-amara@penguin:~$ echo Introduce tu nombre
-Introduce tu nombre
-amara@penguin:~$ read nombre
-amara
-amara@penguin:~$ echo Tu nombre es $nombre
-Tu nombre es amara
