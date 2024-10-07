@@ -1,0 +1,15 @@
+#en el archivo ejercicio6 escribimos en siguiente codigo
+
+#se usa el if para comparar el valor del usuario con la contraseña correcta y while para repetir el proceso hasta que las contraseñas coincidan, el codigo se deja de ejecutar con el break
+#!/bin/bash
+while true; do
+    read -p "ingresar  contraseña: " valor
+        echo
+    if [ "$valor" == "secreta" ]; then
+        echo "Acceso concedido"
+        break  
+    else
+        echo "Contraseña incorrecta, intenta nuevamente."
+    fi
+done
+
