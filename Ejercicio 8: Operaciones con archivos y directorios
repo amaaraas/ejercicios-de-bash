@@ -1,0 +1,27 @@
+#en el achivo ejecicio8.sh escribimos lo siguiente
+#!/bin/bash
+mkdir mydir
+echo "el directorio se ha creado con exito"
+
+#primero comprobamos que no exista el directorio mydir
+amara@penguin:~$ ls
+BucleFor.sh     ejercicio6.sh  hello.sh            node_modules  zphisher
+comparativa     ejercicio7.sh  ingresar_nombre.sh  pt
+comparativa.sh  ejercicio8.sh  miniconda3          suma.sh
+
+#entonces al ejecutar el script se ve asi
+amara@penguin:~$ ./ejercicio8.sh 
+el directorio se ha creado on exito
+
+#comprobamos que se haya creado
+amara@penguin:~$ ls
+BucleFor.sh     ejercicio6.sh  hello.sh            mydir         suma.sh
+comparativa     ejercicio7.sh  ingresar_nombre.sh  node_modules  zphisher
+comparativa.sh  ejercicio8.sh  miniconda3          pt
+
+#dentro de mydir se crearon 5 archivos de texto 
+amara@penguin:~$ cd mydir
+amara@penguin:~/mydir$ touch file1.txt file2.txt file3.txt file4.txt file5.txt
+amara@penguin:~/mydir$ ls
+file1.txt  file2.txt  file3.txt  file4.txt  file5.txt
+amara@penguin:~/mydir$ 
