@@ -1,0 +1,72 @@
+#primero se creo el archivo logfile.txt y hacemos una lista
+amara@penguin:~$ cat > logfile.txt
+ciudades de japon
+shibuya
+tokyo
+kyoto
+fukushima
+hiroshima
+amara@penguin:~$
+
+#luego creamos el archivo ejercicio9.sh con lo siguiente, este codigo hara que grep busque todas las palabras que contengan la letra i en el archivo logfile.txt y las enliste
+#!/bin/bash
+grep i logfile.txt
+
+#resultado
+amara@penguin:~$ ./ejericio9.sh
+ciudades de japon
+shibuya
+fukushima
+hiroshima
+amara@penguin:~$
+
+
+#ahora para encontrar los archivos de extension .txt que existan en el directorio que estamos, usamos find. En este caso solo tengo un archivo .txt         
+amara@penguin:~$ find -name *.txt
+./logfile.txt
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
