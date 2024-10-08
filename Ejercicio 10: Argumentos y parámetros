@@ -1,0 +1,36 @@
+#en el archivo ejercicio10.sh escribimos lo siguiente
+
+#!/bin/bash
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 logfile.txt"
+    exit 1
+fi
+
+archivo="$1"
+if [ -e "$logfile.txt" ]; then
+    echo "Archivo no encontrado"
+else
+    echo "Archivo encontrado"
+fi
+
+#resultado al ejecutar
+
+amara@penguin:~$ ./ejercicio10.sh logfile.txt
+Archivo encontrado
+amara@penguin:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
